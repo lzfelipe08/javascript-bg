@@ -1,16 +1,10 @@
+let login = prompt("informe o seu usuario:")
+let senha = window.prompt("informe sua senha")
 
-let nome = window.prompt("informe o seu nome:")
-let senha = window.prompt("informe sua senha:")
-
-
-console.log("admin")
-
-console.log("123")
-
-if (nome == "admin") {
-    console.log("bem vindo")
+if (login == "admin" && senha == "senha123") {
+    console.log("login bem sucedido!")
 }
 
-if (nome == senha){
-    console.log("correto")
+else {
+    console.log("você não tem permissão de acesso")
 }
