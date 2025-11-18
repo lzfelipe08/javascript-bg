@@ -1,4 +1,4 @@
-let numero = prompt.("escreva um numero de 1 á 7: ")
+let numero = prompt("escreva um numero de 1 á 7: ")
 
 switch (numero) {
     case "1":
