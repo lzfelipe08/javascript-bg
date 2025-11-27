@@ -1,47 +1,38 @@
-let numero = prompt("escreva um numero de 1 á 7: ")
+let dia_semana = prompt("Informe um número de 1 a 7: ")
 
-switch (numero) {
+switch (dia_semana) {
     case "1":
-
-        console.log("domingo")
-
+        console.log("Segunda-feira")
         break;
 
     case "2":
-        console.log("segunda")
-
+        console.log("Terça-feira")
         break;
 
     case "3":
-        console.log("terça")
-
+        console.log("Quarta-feira")
         break;
 
     case "4":
-        console.log("quarta")
-
+        console.log("Quinta-feira")
         break;
 
     case "5":
-        console.log("quinta")
-
+        console.log("Sexta-feira")
         break;
 
     case "6":
-        console.log("sexta")
-
+        console.log("Sábado")
         break;
 
     case "7":
-        console.log("sabado")
-
+        console.log("Domingo")
         break;
 
     default:
-        console.log("o numero informado não é valido")
+        console.log("O número informado não é valido")
         break;
 }
-
 
 
 

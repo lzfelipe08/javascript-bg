@@ -19,3 +19,5 @@ let valorFinal = valorTotal - (valorTotal*desconto)
 
 console.log("O valor final da compra com o desconto: R$" + 
     valorFinal.toFixed(2))
+
+    
