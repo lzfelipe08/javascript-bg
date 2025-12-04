@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: "Charter-regular";
+    src: url(./fonts/Charter\ Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --preto: #080202;
+    --branco: #ffffff;
+    --fundo-site: #F3F2F2;
+    --cafe: #fc1515;
+    --caramelo: #0a0705;
+    --bege: #C89C7C;
+    --verde: #fd1a1a;
+}
+
+
+
+.espaco_lateral{
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* -------- Menu ------- */
+header{
+    height: 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    height: 300px; /* ajuste a altura conforme quiser */
+    background-image: url("img/banner.png");
+    background-size: cover;       /* faz a imagem preencher todo o banner */
+    background-position: center;  /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita repetição */}
+
+header img{
+    width: 155px;
+}
+
+.menu{
+    max-width: 700px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    font-size: 25px;
+    color: var(--caramelo);
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-family: "Inter", sans-serif;
+}
+
+.menu a:hover{
+    color: var(--verde);
+}
+
+/* -------- Menu Hamburguer ------- */
+ #icone-barras,
+ #icone-x,
+ #menu_botao{
+    display: none;
+ }
+
+
+
+
+
+
+/* ---------- Reponsividade ---------------- */
+@media screen and (max-width: 768px){
+    #sombra{
+        background-color: var(--caramelo);
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        right: -101vw;
+        transition: .5s;
+    }
+
+    #menu_botao{
+        display: block;
+        z-index: 1;
+    }
+
+    header{
+        position: relative;
+    }
+
+    header button{
+        width: 50px;
+
+        background: none;
+        border: none;
+
+        display: unset;
+        cursor: pointer;
+    }
+
+    header svg{
+        fill: var(--cafe);
+    }
+
+    #icone-barras{
+        display: block;
+    }
+
+    nav.menu{
+        width: 200px;
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+
+        position: fixed;
+        top: 165px;
+        right: -210px;
+        z-index: 1;
+        transition: .5s;
+    }
+
+    .menu a{
+        color: var(--branco);
+    }
+}
+

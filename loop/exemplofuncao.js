@@ -218,4 +218,3 @@ function IMC() {
         console.log("Obesidade grau 3")
     }
 }
-ßß
