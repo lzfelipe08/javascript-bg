@@ -6,25 +6,29 @@
     src: url(./fonts/Charter\ Regular.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --preto: #080202;
+:root {
+    --preto: #000000;
     --branco: #ffffff;
     --fundo-site: #F3F2F2;
     --cafe: #fc1515;
-    --caramelo: #0a0705;
+    --caramelo: #000000;
     --bege: #C89C7C;
     --verde: #fd1a1a;
+    --fundo: #681616;
 }
 
+body {
 
+    background-color: #ffffff;
+}
 
-.espaco_lateral{
+.espaco_lateral {
     width: 80vw;
     max-width: 1400px;
     margin: 0 auto;
@@ -32,33 +36,27 @@
 
 
 /* -------- Menu ------- */
-header{
-    height: 165px;
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 27px 0;
 }
 
-.banner {
-    width: 100%;
-    height: 300px; /* ajuste a altura conforme quiser */
-    background-image: url("img/banner.png");
-    background-size: cover;       /* faz a imagem preencher todo o banner */
-    background-position: center;  /* centraliza a imagem */
-    background-repeat: no-repeat; /* evita repetição */}
 
-header img{
+
+header img {
     width: 155px;
 }
 
-.menu{
+.menu {
     max-width: 700px;
     width: 70%;
     display: flex;
     justify-content: space-between;
 }
 
-.menu a{
+.menu a {
     font-size: 25px;
     color: var(--caramelo);
     text-decoration: none;
@@ -66,16 +64,16 @@ header img{
     font-family: "Inter", sans-serif;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: var(--verde);
 }
 
 /* -------- Menu Hamburguer ------- */
- #icone-barras,
- #icone-x,
- #menu_botao{
+#icone-barras,
+#icone-x,
+#menu_botao {
     display: none;
- }
+}
 
 
 
@@ -83,8 +81,8 @@ header img{
 
 
 /* ---------- Reponsividade ---------------- */
-@media screen and (max-width: 768px){
-    #sombra{
+@media screen and (max-width: 768px) {
+    #sombra {
         background-color: var(--caramelo);
         backdrop-filter: blur(10px);
         z-index: 1;
@@ -95,16 +93,16 @@ header img{
         transition: .5s;
     }
 
-    #menu_botao{
+    #menu_botao {
         display: block;
         z-index: 1;
     }
 
-    header{
+    header {
         position: relative;
     }
 
-    header button{
+    header button {
         width: 50px;
 
         background: none;
@@ -114,15 +112,15 @@ header img{
         cursor: pointer;
     }
 
-    header svg{
+    header svg {
         fill: var(--cafe);
     }
 
-    #icone-barras{
+    #icone-barras {
         display: block;
     }
 
-    nav.menu{
+    nav.menu {
         width: 200px;
         padding: 0px 30px;
 
@@ -137,8 +135,89 @@ header img{
         transition: .5s;
     }
 
-    .menu a{
+    .menu a {
         color: var(--branco);
     }
 }
 
+.banner {
+    background-image: url("./img/banner.png");
+    height: 600px;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: 0 -10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+}
+
+#parallax {
+    height: 250px;
+background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(120, 16, 24, 1) 0%, rgba(30, 19, 34, 1) 50%);    margin-bottom: 120px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    margin-top: 30px;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.item img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.categoria {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+}
+.conteudo-sobre>div{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 50px;
+}
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.sobre no
