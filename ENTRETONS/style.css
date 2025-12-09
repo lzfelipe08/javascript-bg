@@ -159,10 +159,11 @@ header img {
 
 #parallax {
     height: 250px;
-background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(120, 16, 24, 1) 0%, rgba(30, 19, 34, 1) 50%);    margin-bottom: 120px;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(120, 16, 24, 1) 0%, rgba(30, 19, 34, 1) 50%);
+    margin-bottom: 120px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
+
     background-size: cover;
 }
 
@@ -185,6 +186,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     justify-items: center;
+
 }
 
 .item img {
@@ -202,22 +204,45 @@ body {
     color: black;
 }
 
-.conteudo-sobre{
+.conteudo-sobre {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 40px;
     align-items: center;
 }
-.conteudo-sobre>div{
+
+.conteudo-sobre>div {
     display: flex;
     align-items: center;
     width: 50%;
     gap: 50px;
 }
+
 @media (max-width: 600px) {
     .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 5fr;
     }
 }
-.sobre no
+
+#parallax {
+    height: 250px;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(120, 16, 24, 1) 0%, rgba(30, 19, 34, 1) 50%);
+    margin-bottom: 120px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    align-items: center;
+    width: 50%;
+    gap: 50px;
+}
+
+
+.fileira {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
