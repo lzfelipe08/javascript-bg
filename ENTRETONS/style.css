@@ -20,7 +20,7 @@
     --caramelo: #000000;
     --bege: #C89C7C;
     --verde: #fd1a1a;
-    --fundo: #861010;
+    --fundo: #a70c0c;
     --CONTATO: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(120, 16, 24, 1) 0%, rgba(30, 19, 34, 1) 50%);
 }
 
@@ -180,8 +180,7 @@ body {
     font-size: 28px;
     text-decoration: underline;
 }
-
-.conteudo-sobre p {
+.conteudo-sobre p{
     width: 200px;
     height: 500px;
 }
@@ -254,7 +253,7 @@ body {
     align-items: center;
     display: flex; */
 /* } */
-.arrumar {
+.arrumar{
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -269,7 +268,6 @@ body {
     width: 100%;
     background-size: cover;
 }
-
 /* ------------------contatooo------------------ */
 #contato {
     text-align: center;
@@ -299,7 +297,7 @@ body {
 
     border: solid 3px var(--roxo-pixeV);
     border-radius: 40px;
-    background-color: var(--ver);
+    background-color: var(--CONTATO);
 
     color: var(--preto);
     font-family: "recursive", sans-linear;
@@ -397,7 +395,7 @@ body {
 }
 
 #contato form button:hover {
-    background-color: var(--verde);
+    background-color: var(--verde-pixelv);
 
 }
 
@@ -450,7 +448,6 @@ footer .container-grid {
 .icones-redes a:hover {
     color: var(--verde-pixelv);
 }
-
 @media screen and (max-width: 1024px) {
 
     .titulo,
@@ -489,9 +486,9 @@ footer .container-grid {
         fill: var(--branco);
     }
 
-    nav.menu {
-
-        height: 500px;
+    nav.menu{
+     
+        height: 500px ;
         width: 350px;
 
         padding: 0px 30px;
@@ -501,36 +498,35 @@ footer .container-grid {
         flex-direction: column;
         justify-content: space-around;
 
-        position: fixed;
-        top: 165px;
-        right: 350px;
+        position:fixed;
+        top:165px;
+        right:-350px;
 
-        z-index: 1;
+        z-index:1;
         transition: .5s;
 
     }
 
-    .conteudo-banner img {
+    .conteudo-banner img{
+        display: none;
+    }
+    .conteudo-banner{
+      text-align: center;
+    }
+
+    #sobre img{
         display: none;
     }
 
-    .conteudo-banner {
-        text-align: center;
-    }
-
-    #sobre img {
-        display: none;
-    }
-
-    .titulo {
+    .titulo{
         justify-content: center;
     }
 
-    #cases img {
+    #cases img{
         height: 200px;
     }
 
-    footer .roda-pe {
+    footer .roda-pe{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -538,68 +534,81 @@ footer .container-grid {
         gap: 20px;
     }
 
-    footer img {
+    footer img{
         height: 80px;
     }
 
-    .redes-sociais {
+    .redes-sociais{
         align-items: center;
         justify-content: center;
     }
 
-    .redes-sociais svg {
+    .redes-sociais svg{
         height: 35px;
     }
 }
-
 @media (max-width: 768px) {
+  /* Mostrar hambúrguer */
+  .hamburger {
+    display: flex;
+  }
 
-    /* Mostrar hambúrguer */
-    .hamburger {
-        display: flex;
-    }
+  #icone-barras{
+    width: 100%;
+  }
 
-    /* Esconder menu */
-    .nav-menu {
-        position: absolute;
-        top: 60px;
-        right: -200px;
-        /* Fora da tela */
-        background: #333;
-        width: 180px;
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-        transition: right 0.3s ease;
-    }
+  /* Esconder menu */
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: -200px;     /* Fora da tela */
+    background: #333;
+    width: 180px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    transition: right 0.3s ease;
+  }
 
 
-    .nav-menu.active {
-        right: 0;
-    }
+  .nav-menu.active {
+    right: 0;       
+  }
 }
 
 @media (max-width: 768px) {
-
-    .hamburger {
-        display: flex;
-    }
-
-
-    .nav-menu {
-        position: absolute;
-        top: 60px;
-        right: -200px;
-        background: var(--CONTATO);
-        width: 180px;
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-        transition: right 0.3s ease;
-    }
+ 
+  .hamburger {
+    display: flex;
+  }
 
 
-    .nav-menu.active {
-        right: 0;
-    }
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: -200px;    
+    background: var(--CONTATO);
+    width: 180px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    transition: right 0.3s ease;
+  }
+
+ 
+  .nav-menu.active {
+    right: 0;         
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
