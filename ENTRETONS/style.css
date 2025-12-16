@@ -180,7 +180,8 @@ body {
     font-size: 28px;
     text-decoration: underline;
 }
-.conteudo-sobre p{
+
+.conteudo-sobre p {
     width: 200px;
     height: 500px;
 }
@@ -253,7 +254,7 @@ body {
     align-items: center;
     display: flex; */
 /* } */
-.arrumar{
+.arrumar {
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -268,6 +269,7 @@ body {
     width: 100%;
     background-size: cover;
 }
+
 /* ------------------contatooo------------------ */
 #contato {
     text-align: center;
@@ -378,7 +380,7 @@ body {
     height: 40px;
     width: 60%;
 
-    background-color: var(--roxo-pixeV);
+    background-color: var(--preto);
     color: var(--branco);
 
     border: none;
@@ -395,7 +397,7 @@ body {
 }
 
 #contato form button:hover {
-    background-color: var(--verde-pixelv);
+    background-color: var(--verde);
 
 }
 
@@ -448,6 +450,7 @@ footer .container-grid {
 .icones-redes a:hover {
     color: var(--verde-pixelv);
 }
+
 @media screen and (max-width: 1024px) {
 
     .titulo,
@@ -464,6 +467,21 @@ footer .container-grid {
     .menu {
         justify-content: space-evenly;
     }
+}
+
+#redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#redes-sociais img {
+    width: 80px;
+}
+
+.parallax-redes {
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width:768px) {
@@ -486,9 +504,9 @@ footer .container-grid {
         fill: var(--branco);
     }
 
-    nav.menu{
-     
-        height: 500px ;
+    nav.menu {
+
+        height: 500px;
         width: 350px;
 
         padding: 0px 30px;
@@ -498,35 +516,36 @@ footer .container-grid {
         flex-direction: column;
         justify-content: space-around;
 
-        position:fixed;
-        top:165px;
-        right:-350px;
+        position: fixed;
+        top: 165px;
+        right: -350px;
 
-        z-index:1;
+        z-index: 1;
         transition: .5s;
 
     }
 
-    .conteudo-banner img{
-        display: none;
-    }
-    .conteudo-banner{
-      text-align: center;
-    }
-
-    #sobre img{
+    .conteudo-banner img {
         display: none;
     }
 
-    .titulo{
+    .conteudo-banner {
+        text-align: center;
+    }
+
+    #sobre img {
+        display: none;
+    }
+
+    .titulo {
         justify-content: center;
     }
 
-    #cases img{
+    #cases img {
         height: 200px;
     }
 
-    footer .roda-pe{
+    footer .roda-pe {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -534,81 +553,78 @@ footer .container-grid {
         gap: 20px;
     }
 
-    footer img{
+    footer img {
         height: 80px;
     }
 
-    .redes-sociais{
+    .redes-sociais {
         align-items: center;
         justify-content: center;
     }
 
-    .redes-sociais svg{
+    .redes-sociais svg {
         height: 35px;
     }
 }
+
 @media (max-width: 768px) {
-  /* Mostrar hambúrguer */
-  .hamburger {
-    display: flex;
-  }
 
-  #icone-barras{
-    width: 100%;
-  }
+    /* Mostrar hambúrguer */
+    .hamburger {
+        display: flex;
+    }
 
-  /* Esconder menu */
-  .nav-menu {
-    position: absolute;
-    top: 60px;
-    right: -200px;     /* Fora da tela */
-    background: #333;
-    width: 180px;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    transition: right 0.3s ease;
-  }
+    #icone-barras {
+        width: 100%;
+    }
+
+    /* Esconder menu */
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        right: -200px;
+        /* Fora da tela */
+        background: #333;
+        width: 180px;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        transition: right 0.3s ease;
+    }
 
 
-  .nav-menu.active {
-    right: 0;       
-  }
+    .nav-menu.active {
+        right: 0;
+    }
 }
 
 @media (max-width: 768px) {
- 
-  .hamburger {
-    display: flex;
-  }
+
+    .hamburger {
+        display: flex;
+    }
 
 
-  .nav-menu {
-    position: absolute;
-    top: 60px;
-    right: -200px;    
-    background: var(--CONTATO);
-    width: 180px;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    transition: right 0.3s ease;
-  }
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        right: -200px;
+        background: var(--CONTATO);
+        width: 180px;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        transition: right 0.3s ease;
+    }
 
- 
-  .nav-menu.active {
-    right: 0;         
-  }
+
+    .nav-menu.active {
+        right: 0;
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
+.form-tiktok {
+    width: 50px;
+    height: 0px;
+}
 
